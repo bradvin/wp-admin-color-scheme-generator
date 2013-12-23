@@ -151,14 +151,14 @@ class Admin_Color_Scheme_Generator {
 		$this->scheme_slug = sanitize_title_with_dashes( $this->scheme_name );
 
 		$variables = array(
-			'{name}'               => trim( $this->scheme_name ),
+			'{name}'               => sanitize_text_field( $this->scheme_name ),
 			'{slug}'               => $this->scheme_slug,
-			'{author}'             => trim( $_REQUEST['scheme_author'] ),
-			'{base-color}'         => trim( $_REQUEST['scheme_base_color'] ),
-			'{highlight-color}'    => trim( $_REQUEST['scheme_highlight_color'] ),
-			'{notification-color}' => trim( $_REQUEST['scheme_notification_color'] ),
-			'{action-color}'       => trim( $_REQUEST['scheme_action_color'] ),
-			'{tool}'               => __( 'Admin Color Scheme Generator', 'admin-color-scheme-generator' )
+			'{author}'             => sanitize_text_field( $_REQUEST['scheme_author'] ),
+			'{base-color}'         => sanitize_text_field( $_REQUEST['scheme_base_color'] ),
+			'{highlight-color}'    => sanitize_text_field( $_REQUEST['scheme_highlight_color'] ),
+			'{notification-color}' => sanitize_text_field( $_REQUEST['scheme_notification_color'] ),
+			'{action-color}'       => sanitize_text_field( $_REQUEST['scheme_action_color'] ),
+			'{tool}'               => '<a href="http://themergency.com/generators/admin-color-scheme-generator" target="_blank">' . __( 'Admin Color Scheme Generator', 'admin-color-scheme-generator' ) . '</a>'
 		);
 
 		$zip_generator = new WP_Zip_Generator(array(
