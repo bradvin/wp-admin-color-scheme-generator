@@ -1,0 +1,13 @@
+#acsg_form {
+	margin:20px;
+}
+
+	#acsg_form label {
+		display: inline-block;
+		width:150px;
+	}
+
+	#acsg_form input[type=text] {
+		height:28px;
+		width:250px;
+	}

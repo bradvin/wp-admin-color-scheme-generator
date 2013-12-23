@@ -1,0 +1,6 @@
+$base-color: {base-color};
+$highlight-color: {highlight-color};
+$notification-color: {notification-color};
+$action-color: {action-color};
+
+@import "admin";
