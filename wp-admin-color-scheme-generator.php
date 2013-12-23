@@ -25,8 +25,9 @@ class Admin_Color_Scheme_Generator {
 
 	function __construct() {
 		add_action( 'admin_menu', array($this, 'add_menu') );
-		add_action( 'admin_init', array($this, 'generate_color_scheme') );
+		add_action( 'template_redirect', array($this, 'generate_color_scheme') );
 
+		//do_action('admin_color_scheme_generator_print_form');
 		add_action( 'admin_color_scheme_generator_print_form', array($this, 'print_form') );
 	}
 
