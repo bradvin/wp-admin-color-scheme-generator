@@ -146,7 +146,7 @@ class Admin_Color_Scheme_Generator {
 
 		//include our dependencies
 		require_once plugin_dir_path( __FILE__ ) . 'includes/phpscss/scss.inc.php';
-		require_once plugin_dir_path( __FILE__ ) . 'includes/class-wp_zip_generator.php';
+		require_once plugin_dir_path( __FILE__ ) . 'includes/zip/class-wp_zip_generator.php';
 
 		$this->scheme_name = $_REQUEST['scheme_name'];
 		$this->scheme_slug = sanitize_title_with_dashes( $this->scheme_name );

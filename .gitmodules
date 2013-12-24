@@ -1,0 +1,3 @@
+[submodule "includes/zip"]
+	path = includes/zip
+	url = https://github.com/bradvin/wp-zip-generator
