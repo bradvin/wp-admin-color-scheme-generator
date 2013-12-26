@@ -154,6 +154,7 @@ class Admin_Color_Scheme_Generator {
 		$variables = array(
 			'{name}'               => sanitize_text_field( $this->scheme_name ),
 			'{slug}'               => $this->scheme_slug,
+			'{slug-class}'         => str_replace('-', '_', $this->scheme_slug),
 			'{author}'             => sanitize_text_field( $_REQUEST['scheme_author'] ),
 			'{base-color}'         => sanitize_text_field( $_REQUEST['scheme_base_color'] ),
 			'{highlight-color}'    => sanitize_text_field( $_REQUEST['scheme_highlight_color'] ),

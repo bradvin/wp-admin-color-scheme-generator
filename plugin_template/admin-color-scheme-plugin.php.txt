@@ -10,7 +10,7 @@
  * Copyright 2013 {author}
  */
 
-class {slug}_Admin_Color_Scheme {
+class {slug-class}_Admin_Color_Scheme {
 
 	function __construct() {
 		add_action( 'admin_enqueue_scripts', array( $this, 'load_default_css') );
