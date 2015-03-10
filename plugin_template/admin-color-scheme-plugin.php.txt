@@ -53,4 +53,4 @@ class {slug-class}_Admin_Color_Scheme {
 	}
 }
 
-new {slug}_Admin_Color_Scheme();
+new {slug-class}_Admin_Color_Scheme();
